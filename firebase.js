@@ -1,12 +1,12 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCBPpFFSgrYgvFhlxVXEp6rnabcuBn1xKs",
-  authDomain: "disney-acd1a.firebaseapp.com",
-  projectId: "disney-acd1a",
-  storageBucket: "disney-acd1a.appspot.com",
-  messagingSenderId: "1030661905586",
-  appId: "1:1030661905586:web:09a73737e221685b37fdab",
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.FIREBASE_APP_ID,
 };
 
 const app = !firebase.apps.length
